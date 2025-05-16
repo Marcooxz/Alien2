@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgmgdm61stanj"]
+
+[ext_resource type="Texture2D" uid="uid://s57fclr41sdc" path="res://assets/Nueva imagen de mapa de bits.bmp" id="1_vnc34"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b12v1"]
+size = Vector2(1997.25, 37)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6jova"]
+size = Vector2(63, 445)
+
+[node name="Pasillo" type="StaticBody2D"]
+position = Vector2(113, -29)
+scale = Vector2(1.72484, 1.49514)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(376, 240)
+texture = ExtResource("1_vnc34")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(375.5, 452.5)
+shape = SubResource("RectangleShape2D_b12v1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(374, -3)
+shape = SubResource("RectangleShape2D_b12v1")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(372.208, -452.8)
+shape = SubResource("RectangleShape2D_b12v1")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-648, 222)
+shape = SubResource("RectangleShape2D_6jova")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(1403.03, 219.377)
+shape = SubResource("RectangleShape2D_6jova")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(-645.857, -215.364)
+shape = SubResource("RectangleShape2D_6jova")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(1403.61, -239.442)
+shape = SubResource("RectangleShape2D_6jova")

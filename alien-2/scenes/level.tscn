@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://bhk2u3cv7jp4o"]
+
+[ext_resource type="PackedScene" uid="uid://cgmgdm61stanj" path="res://scenes/pasillo.tscn" id="1_w8frs"]
+[ext_resource type="PackedScene" uid="uid://ctburq3nr7p62" path="res://scenes/soldier.tscn" id="2_mx8sn"]
+[ext_resource type="Script" uid="uid://df8ipkn120bk1" path="res://scenes/soldier.gd" id="3_mx8sn"]
+[ext_resource type="PackedScene" uid="uid://gvgvy1dtuhyo" path="res://scenes/alien.tscn" id="3_ppgk2"]
+[ext_resource type="Script" uid="uid://bg6gt4ao0bt68" path="res://scenes/alien.gd" id="5_ppgk2"]
+
+[node name="level" type="Node2D"]
+position = Vector2(-66, -6)
+scale = Vector2(0.861637, 0.982434)
+
+[node name="Pasillo" parent="." instance=ExtResource("1_w8frs")]
+
+[node name="Alien" parent="." instance=ExtResource("3_ppgk2")]
+position = Vector2(1135.05, 338.954)
+scale = Vector2(0.518596, 0.487514)
+script = ExtResource("5_ppgk2")
+
+[node name="Soldier" parent="." instance=ExtResource("2_mx8sn")]
+position = Vector2(503.692, 382.723)
+scale = Vector2(3.13867, 3.06017)
+script = ExtResource("3_mx8sn")
